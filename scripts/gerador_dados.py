@@ -10,7 +10,7 @@ produtos = [
 
 data_inicial = datetime(2026, 1, 1)
 
-with open("pedidos_brutos.csv", "w", newline="", encoding="utf-8") as file:
+with open("./data/raw/pedidos_brutos.csv", "w", newline="", encoding="utf-8") as file:
     writer = csv.writer(file)
     writer.writerow(["ID Pedido", "Data", "Produto", "Categoria", "Quantidade", "Valor Unitário"])
 
